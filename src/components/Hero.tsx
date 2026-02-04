@@ -25,7 +25,7 @@ export function Hero() {
             href="#request"
             className="inline-flex w-full items-center justify-center rounded-lg border border-navy-400 bg-transparent px-6 py-3.5 text-base font-medium text-white transition-colors hover:bg-navy-800 sm:w-auto"
           >
-            Зв'язатися з нами
+            {"Зв'язатися з нами"}
           </Link>
         </div>
       </div>

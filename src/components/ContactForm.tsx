@@ -44,7 +44,7 @@ export function ContactForm() {
             Залишити заявку
           </h2>
           <p className="mt-4 text-lg text-navy-600">
-            Опишіть задачу — ми зв'яжемося з вами найближчим часом.
+            {"Опишіть задачу — ми зв'яжемося з вами найближчим часом."}
           </p>
         </div>
         <form
@@ -57,7 +57,7 @@ export function ContactForm() {
                 htmlFor="name"
                 className="block text-sm font-medium text-navy-700"
               >
-                Ім'я *
+                {"Ім'я *"}
               </label>
               <input
                 id="name"
@@ -134,7 +134,7 @@ export function ContactForm() {
             </button>
             {status === "sent" && (
               <p className="text-sm text-green-700">
-                Дякуємо! Ваша заявка успішно надіслана. Ми зв'яжемося з вами найближчим часом.
+                {"Дякуємо! Ваша заявка успішно надіслана. Ми зв'яжемося з вами найближчим часом."}
               </p>
             )}
             {status === "error" && (

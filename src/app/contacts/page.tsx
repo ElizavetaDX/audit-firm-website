@@ -37,7 +37,7 @@ export default function ContactsPage() {
       <section className="bg-white px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-xl font-semibold text-navy-900 sm:text-2xl">
-            Як з нами зв'язатися
+            {"Як з нами зв'язатися"}
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
             {CONTACTS.map(({ icon: Icon, label, value }) => (

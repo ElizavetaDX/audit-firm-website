@@ -2,9 +2,16 @@ import { NextResponse } from "next/server";
 
 const TELEGRAM_API = "https://api.telegram.org";
 
+type TelegramRequestBody = {
+  name?: string;
+  phone?: string;
+  email?: string;
+  message?: string;
+};
+
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
+    const body = (await request.json()) as TelegramRequestBody;
     const { name, phone, email, message } = body;
 
     if (!name || !phone || !email) {
