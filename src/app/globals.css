@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0f172a;
+  --accent: #7dd3fc;
+  --accent-dark: #0ea5e9;
+}
+
+body {
+  @apply antialiased text-navy-900 bg-white;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Calculator range input */
+input[type="range"].calculator-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 9999px;
+  background: #e2e8f0;
+}
+input[type="range"].calculator-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1a202c;
+  cursor: pointer;
+  border: 3px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+input[type="range"].calculator-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1a202c;
+  cursor: pointer;
+  border: 3px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
